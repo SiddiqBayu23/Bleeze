@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lt_newpass"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_fileName="newpass.json"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Your New Password Must Be Different from Previously Used Password"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/lt_newpass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_newpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Password"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/iv_newpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newpass"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_conpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_newpass"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/iv_conpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:background="@drawable/custom_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_conpass"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="SELESAI"
+        android:onClick="clickSelesai"
+        app:layout_constraintTop_toBottomOf="@+id/iv_conpass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_logout"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="70dp"
+        android:textColor="@color/color1"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

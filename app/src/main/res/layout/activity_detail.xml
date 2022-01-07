@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail"
+    android:background="@color/color3">
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Velg OZ Racing 5.5 inch"
+        android:textAlignment="center"
+        android:textColor="@color/color1"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_sparepart"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:src="@color/color2" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_sparepart"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="In terms of material, the rim is made of forged aluminum alloy, the result is light weight but the structure can be stronger, A rim weighs only 2-3 kg, certainly much lighter than the default motorcycle rim"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_deskripsi"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Harga : "
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tv_hargatertulis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_harga"
+        android:layout_marginLeft="15dp"
+        android:text="Rp 3.250.000,-"
+        android:textColor="@color/color1"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Jumlah beli"
+        android:paddingLeft="15dp"
+        android:background="@drawable/custom_input"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_below="@id/tv_hargatertulis"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/et_jumlah"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="18sp"
+        android:background="@drawable/button_logout"
+        android:text="BELI"
+        android:textColor="@color/color1"
+        android:layout_marginTop="5dp"
+        android:onClick="clickBeli"/>
+</RelativeLayout>

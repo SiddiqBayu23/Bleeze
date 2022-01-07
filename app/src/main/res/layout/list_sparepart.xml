@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_list">
+
+    <ImageView
+        android:id="@+id/img_item"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        tools:src="@color/color2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/img_item"
+        android:layout_toRightOf="@+id/img_item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Nama Sparepart"/>
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Detail Sparepart"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

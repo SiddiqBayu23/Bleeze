@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "393837835712",
+    "firebase_url": "https://bleezesparepart-default-rtdb.firebaseio.com",
+    "project_id": "bleezesparepart",
+    "storage_bucket": "bleezesparepart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393837835712:android:129005d35c7104e5300425",
+        "android_client_info": {
+          "package_name": "com.udinus.bleezesparepart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393837835712-6p0g4mfjfmgbh4bpnvhgff5cptu5ht8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5_ZvblfePjRkIERTe486S66P4q6YQVko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393837835712-6p0g4mfjfmgbh4bpnvhgff5cptu5ht8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lt_forgot"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_fileName="forgot.json"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Your Email Address To Receive a Verification Code"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/lt_forgot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/custom_input"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="RESET"
+        android:onClick="clickReset"
+        app:layout_constraintTop_toBottomOf="@+id/et_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/button_logout"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/color1"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="25dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
